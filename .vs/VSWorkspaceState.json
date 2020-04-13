@@ -1,0 +1,15 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\bikenet",
+    "\\bikenet\\bin",
+    "\\bikenet\\public",
+    "\\bikenet\\public\\images",
+    "\\bikenet\\public\\javascripts",
+    "\\bikenet\\public\\stylesheets",
+    "\\bikenet\\routes",
+    "\\bikenet\\views"
+  ],
+  "SelectedNode": "\\bikenet\\bin\\www",
+  "PreviewInSolutionExplorer": false
+}
