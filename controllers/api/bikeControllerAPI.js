@@ -28,7 +28,6 @@ exports.bike_update = function(req, res){
     bike.model = req.body.model;
     bike.location = [req.body.lat, req.body.lng];
 
-    Bike.add(bike);
     res.status(200).json({
         bikes: bike
     });
