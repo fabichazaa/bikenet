@@ -23,18 +23,20 @@ Bike.removeById = function(bikeId){
     }
 }
 
-Bike.findById = function (bikeId){
-    var bike = Bike.allBikes.find(x => x.id = bikeId);
+Bike.findById = function(bikeId){
+    var bike = Bike.allBikes.find(x => x.id == bikeId);
     if(bike)
         return bike;
     else
         throw new Error(`The bike with id=${bikeId} doesn't exist`);
 }
 
+/*
 var a = new Bike(1,'Pink','Urban', [-34.437048, -58.788649]);
 var b = new Bike(2, 'Blue', 'Urban',[-34.397443, -58.670814]);
 
 Bike.add(a);
 Bike.add(b);
+ */
 
 module.exports = Bike;
