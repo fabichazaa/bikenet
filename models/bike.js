@@ -32,7 +32,7 @@ Bike.findById = function (bikeId){
 }
 
 var a = new Bike(1,'Pink','Urban', [-34.437048, -58.788649]);
-var b = new Bike(2, 'Blue', 'Urban',[-34.438335, -58.792286]);
+var b = new Bike(2, 'Blue', 'Urban',[-34.397443, -58.670814]);
 
 Bike.add(a);
 Bike.add(b);
