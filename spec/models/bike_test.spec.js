@@ -44,5 +44,5 @@ describe('Bike.delete', () => {
 
         Bike.removeById(2);
         expect(Bike.allBikes.length).toBe(1);
-    })
-})
+    });
+});
