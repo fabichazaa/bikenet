@@ -46,3 +46,21 @@ describe('Bike.delete', () => {
         expect(Bike.allBikes.length).toBe(1);
     });
 });
+
+describe('Bike.update', () => {
+    it('update a bike by id', () => {
+        var bike1 = new Bike(1,'Pink','Urban', [-34.437048, -58.788649]);
+        var bike2 = new Bike(2, 'Blue', 'Mountain',[-34.397443, -58.670814]);
+
+        Bike.add(bike1);
+        Bike.add(bike2);
+
+        var targetBike = Bike.findById(1);
+        targetBike.id = 3;
+        targetBike.color = 'Purple';
+        targetBike.model = 'Urban';
+
+        expect(Bike.findById(3).color).toBe('Purple');
+        expect(Bike.findById(3).model).toBe('Urban');
+    })
+})
